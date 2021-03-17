@@ -66,8 +66,7 @@ import java.util.Scanner;
      
 
         default:
-          System.out.println("\nOpção inválida\n"
-                  + "Digite novamente\n");
+          System.out.println("Opção inválida");
       }
 
     } while (menu > 0);
