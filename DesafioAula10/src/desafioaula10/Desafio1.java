@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package desafioaula10;
 
 import java.util.ArrayList;
@@ -16,8 +11,8 @@ import java.util.Scanner;
       public static void main(String[] args) {
           
     Scanner leia = new Scanner(System.in);
-    ArrayList<Integer> nums = new ArrayList<>();
-    int numero, numeros, menu, qtd = 0, soma = 0;
+    ArrayList<Integer> n = new ArrayList<>();
+    int numero, numeros, menu, quantidade = 0, soma = 0;
     
 
     do {
@@ -35,7 +30,7 @@ import java.util.Scanner;
             case 1:          
                 System.out.print("Digite um número: ");
                 numeros = leia.nextInt();
-                nums.add(numeros);
+                n.add(numeros);
                 System.out.println(numeros + " adicionado com sucesso !");
             break;
             case 2:
@@ -44,21 +39,21 @@ import java.util.Scanner;
                 System.out.println(numero + " adicionado com sucesso !");
           
                 //quantidade
-                for (int i = 0; i < nums.size(); i++) {
-                  if( nums.get(i).equals(numero)){
-                    qtd = qtd + 1;
+                for (int i = 0; i < s.size(); i++) {
+                  if( n.get(i).equals(numero)){
+                    quantidade = quantidade + 1;
                   }
                 }     
                 
                 //soma
                   
-                for (Integer integer : nums) {
+                for (Integer integer : n) {
                 soma += integer;
         }
           System.out.println(" ____________________________");
           System.out.println("│        RESULTADOS         │");
           System.out.println("│___________________________│");
-          System.out.println("│Quantidade: "+ qtd + "              │");
+          System.out.println("│Quantidade: "+ quantidade + "              │");
           System.out.println("│Soma: " + soma + "                   │");
           System.out.println("│___________________________│");
 
